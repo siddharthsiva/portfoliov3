@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const experiences = [
   {
     role: "AI Software Engineer",
     company: "E4E (Engineers for Exploration) · Internship",
     period: "Feb 2026 – Present",
-    logo: "/e4e.jpg",
+    logo: `${baseUrl}e4e.jpg`,
     logoFallback: "E",
     description:
       "Built LLM agent evaluation workflows and active-learning loops to improve response quality, designed benchmarking dashboards for prompt and model comparisons, and collaborated on data labeling and error-analysis pipelines to accelerate iteration across the AI stack.",
@@ -15,7 +17,7 @@ const experiences = [
     role: "Software Engineering Intern",
     company: "WildGenomics (UCSD Startup) · La Jolla, CA",
     period: "Apr 2025 – Present",
-    logo: "/wildgenomics.jpg",
+    logo: `${baseUrl}wildgenomics.jpg`,
     logoFallback: "WG",
     description:
       "Architected a bioinformatics platform that reduced manual analysis time by 80%, built and iterated TensorFlow models that improved detection accuracy by 9x, and shipped production FastAPI + OpenCV services on AWS with Dockerized microservices, CI/CD, and monitoring.",
@@ -25,7 +27,7 @@ const experiences = [
     role: "Research Assistant",
     company: "UCSD Shtrahman Lab · La Jolla, CA",
     period: "Mar 2025 – Present",
-    logo: "/ucsd.jpg",
+    logo: `${baseUrl}ucsd.jpg`,
     logoFallback: "UC",
     description:
       "Developed custom microscope firmware from concept to implementation to improve system performance by 2x, created Python visualization pipelines with Pandas and Matplotlib for 100K+ recordings, and automated complex preprocessing workflows to cut data preparation time by 65%.",

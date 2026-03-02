@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const projects = [
   {
     title: "Playback",
@@ -8,7 +10,7 @@ const projects = [
       "Building a 49ers playcalling recommendation engine that combines success probability, expected yards, and game context (down, distance, clock, score) to rank optimal plays. Implementing Redis caching and PostgreSQL analytics logging for low-latency recommendations with auditable model outputs, while integrating LangChain reasoning and AWS S3 snapshot storage.",
     tech: ["Python", "LangChain", "Redis", "PostgreSQL", "AWS S3", "Scikit-Learn"],
     github: "https://github.com/siddharthsiva/playback",
-    image: "/playback.png",
+    image: `${baseUrl}playback.png`,
     featured: true,
   },
   {
@@ -17,7 +19,7 @@ const projects = [
       "Collaborated with a cross-functional team to build a student-run campus dining review platform. Developed React + TypeScript frontend flows with Redux state management and helped design a scalable GraphQL backend in Node.js for review submissions, rating sorting, and average star calculations.",
     tech: ["React", "TypeScript", "Redux", "GraphQL", "Node.js", "MongoDB"],
     github: "https://github.com/siddharthsiva/ratemydininghall",
-    image: "/ratemydininghall.png",
+    image: `${baseUrl}ratemydininghall.png`,
     featured: true,
   },
   {
@@ -26,7 +28,7 @@ const projects = [
       "Built an AI-powered CAD assistant that helps teams refine and analyze 3D models through natural language. Contributed to a Python + TypeScript stack with LLM-guided CAD workflows, simulation-aware reasoning, and versioned model iteration.",
     tech: ["Python", "TypeScript", "React", "CadQuery", "Trimesh", "NumPy"],
     github: "https://github.com/siddharthsiva/mannyai",
-    image: "/mannyai.png",
+    image: `${baseUrl}mannyai.png`,
     featured: true,
   },
 ];

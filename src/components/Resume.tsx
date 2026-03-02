@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowDownToLine } from "lucide-react";
 
+const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
+
 const Resume = () => {
   return (
     <section id="resume" className="py-32 px-6 border-t border-border">
@@ -23,7 +25,7 @@ const Resume = () => {
           </div>
 
           <a
-            href="/resume.pdf"
+            href={resumeUrl}
             download
             className="inline-flex items-center gap-3 font-mono text-xs tracking-[0.2em] uppercase border border-border px-8 py-4 text-foreground hover:border-primary/60 hover:text-primary transition-all duration-200 self-start md:self-auto shrink-0"
           >
